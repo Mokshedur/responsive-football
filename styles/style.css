@@ -1,0 +1,107 @@
+body{
+  margin-left: 50px;
+  
+}
+.nav-bar{
+  display: flex;
+
+  
+  background-color: #2D25A0;
+ 
+}
+ul{
+  list-style: none;
+  padding: 20px;
+ font-size: 25px;
+ text-align: center;
+
+ 
+}
+ul li{
+  display: inline-block;
+  margin-right: 45px;
+  
+  
+}
+a{
+  text-decoration: none;
+  color:aliceblue;
+}
+button{
+  background-color:#E02C6D;
+  color: aliceblue;
+}
+
+.button-bar{
+  margin-bottom: 25px;
+  padding: 20px;
+  font-size: 55px;
+
+}
+
+.part2{
+  display: flex;
+  background-color: #2D25A0;
+
+
+}
+.text-1{
+  margin-left: 45px;
+}
+h2{
+ font-size: 2em;
+  color: aliceblue;
+}
+#banner-pic{
+  width: 536px;
+  height: 438px; 
+}
+.player-picture img{
+  width: 300px;
+  height: 256px;
+} 
+.player-picture{
+  width: 330px;
+  height: 474px;
+}
+.player-picture:hover{
+  background-color: bisque;
+  box-shadow: 10px 10px 40px whitesmoke;
+
+}
+.player-all{
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  box-shadow: 10px 10px 40px green;
+}
+.Copa-match-2021{
+  display: flex;
+}
+.copa-America-text{
+  width: 466px;
+  height: 309px;
+}
+.playing-time img{
+  width: 567px;
+  height: 427px;
+}
+.footer-all .footer-pic img{
+  width: 200px;
+  height: 100px;
+}
+.social-icon{
+  margin-left: 20px;
+  padding-left: 20px;
+}
+span{
+  color: #2D25A0;
+  margin: 5px;
+}
+.footer-all{
+  display: grid;
+  grid-template-columns: repeat(1,1fr);
+  text-align: center;
+}
+.footer-all:hover{
+  background-color: #18A0FB;
+}
