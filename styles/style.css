@@ -4,8 +4,7 @@ body{
 }
 .nav-bar{
   display: flex;
-
-  
+ justify-content: space-around;
   background-color: #2D25A0;
  
 }
@@ -42,12 +41,11 @@ button{
 .part2{
   display: flex;
   background-color: #2D25A0;
+  justify-content: space-around;
 
 
 }
-.text-1{
-  margin-left: 45px;
-}
+
 h2{
  font-size: 2em;
   color: aliceblue;
@@ -63,6 +61,9 @@ h2{
 .player-picture{
   width: 330px;
   height: 474px;
+  box-shadow: 10px 10px 40px whitesmoke;
+  margin: 30px;
+  padding: 15px;
 }
 .player-picture:hover{
   background-color: bisque;
@@ -105,3 +106,24 @@ span{
 .footer-all:hover{
   background-color: #18A0FB;
 }
+/*----------- Media Queries 
+--------------*/
+@media only screen and (max-width:688px){
+  .nav-bar{
+    background-color: #2D25A0;
+
+  }
+  .part2{
+    background-color: #2D25A0;
+    grid-template-columns: repeat(1,1fr);
+
+  }
+  .player-all{
+    width: 100%;
+  }
+  .player-picture,.Copa-match-2021{
+   
+    grid-template-columns: repeat(1,1fr); 
+    flex-direction: column;   
+}
+
