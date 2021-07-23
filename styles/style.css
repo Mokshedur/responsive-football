@@ -76,18 +76,19 @@ h2{
   box-shadow: 10px 10px 40px green;
 }
 .Copa-match-2021{
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
 }
 .copa-America-text{
   width: 466px;
   height: 309px;
 }
 .playing-time img{
-  width: 567px;
-  height: 427px;
+  width: 467px;
+  height: 327px;
 }
 .footer-all .footer-pic img{
-  width: 200px;
+  width: 300px;
   height: 100px;
 }
 .social-icon{
@@ -109,21 +110,36 @@ span{
 /*----------- Media Queries 
 --------------*/
 @media only screen and (max-width:688px){
-  .nav-bar{
-    background-color: #2D25A0;
-
-  }
-  .part2{
-    background-color: #2D25A0;
-    grid-template-columns: repeat(1,1fr);
-
-  }
-  .player-all{
+  .container{
     width: 100%;
   }
-  .player-picture,.Copa-match-2021{
-   
-    grid-template-columns: repeat(1,1fr); 
-    flex-direction: column;   
-}
+  .player-all{
+  
+     grid-template-columns: repeat(1,1fr);
+  } 
+  .player-picture{
+    flex-direction: column;
+    text-align: center;
+  }
+  .Copa-match-2021{
+    
+    grid-template-columns: repeat(1,1fr);
+  }
+  .copa-America-text{
+    flex-direction: column;
+    text-align: center;
+  }
+  /* ---------
+  Tabley devices
+  ---------------- */
+  @media only screen and(min-width: 689px) and (max-width:992px){
+    .container{
+      width: 100%;
+    }
+    .player-all, .Copa-match-2021{
+      grid-template-columns: repeat(2,1fr);
+    }
+    
+  }
+
 
